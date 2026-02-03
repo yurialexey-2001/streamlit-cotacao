@@ -46,4 +46,4 @@ with formulario:
         st.success("Email enviado")
         st.info("Redirecionando para Homepage...")
         time.sleep(3)
-        st.switch("pages/homepage.py")
+        st.switch_page("pages/homepage.py")

@@ -11,7 +11,7 @@ with formulario:
     nome = st.text_input("Seu nome")
     email = st.text_input("Seu email")
     qtd_estrelas = ["1","2","2","4","5"]
-    util = ["Sim","Não"]
+    util = ["Não","Sim"]
     
     st.write("#### Avalie a funcionalidade da cotação de moedas:")
 
