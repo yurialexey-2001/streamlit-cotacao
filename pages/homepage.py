@@ -1,5 +1,5 @@
 import streamlit as st
-import time
+
 
 st.title("Seja bem vindo ao meu projeto!",text_alignment="center")
 
@@ -8,8 +8,7 @@ with col2:
     st.image("Logo-Hashtag-Original-1024x458.png",width=278)
 
 st.markdown("""Esse app foi desenvolvido para a participação no **1° desafio da comunidade impressionadora da 
-         Hashtag Treinamentos**. Talvez esse app possa não ser algo que contribui diretamente para a vida dos
-         membros da comunidade, mas como outros fatores também estão sendo avaliados, acho que vale a tentativa.""")
+         Hashtag Treinamentos**. Espero que você tenha uma boa experiência por aqui!""")
 
 st.title("O que você encontrará aqui?")
 
