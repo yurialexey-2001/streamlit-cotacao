@@ -28,20 +28,20 @@ st.write("""Para receber essa planilha é muito simples, basta preencher o
 formulario = st.form(key="enviar planilha")
 
 with formulario:
-
     nome = st.text_input("Seu nome")
     email = st.text_input("Seu email")
     planilha = pd.read_excel("planilha de controle de gastos.xlsx")
 
     mensagem = f"""
-        <p>Olá {nome}, tudo bem?</p>
-        <p>Aqui está a planilha de controle de entradas e saídas prontinha para você.
-        <br>Espero que ela possa te ajudar no seu dia-a-dia.</br></p>
-        <p>Ah, e ela já está prontinha para uso, basta inserir seus dados, ok?</p>
-        <p>Att, Yuri.</p>
-       """ 
+    <p>Olá {nome}, tudo bem?</p>
+    <p>Aqui está a planilha de controle de entradas e saídas prontinha para você.
+    <br>Espero que ela possa te ajudar no seu dia-a-dia.</br></p>
+    <p>Ah, e ela já está prontinha para uso, basta inserir seus dados, ok?</p>
+    <p>Att, Yuri.</p>
+    """ 
+    enviar_planilha = st.form_submit_button("Receber planilha")
 
-    if st.form_submit_button("Receber planilha"):
+    if enviar_planilha:
         enviar_email_anexo(mensagem=mensagem,destino=email,arquivo=planilha)
         st.success("Email enviado")
         st.info("Redirecionando para Homepage...")
