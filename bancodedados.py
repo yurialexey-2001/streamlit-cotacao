@@ -2,7 +2,7 @@ from google.oauth2.service_account import Credentials
 import streamlit as st
 import gspread
 
-def adicionar_feedback(nome_usuario, email_usuario, estrelas_usuario, msg_usuario):
+def adicionar_feedback(nome_usuario, email_usuario, estrelas_usuario, msg_usuario,utilidade):
     SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
     creds = Credentials.from_service_account_info(
@@ -19,7 +19,8 @@ def adicionar_feedback(nome_usuario, email_usuario, estrelas_usuario, msg_usuari
         nome_usuario,
         email_usuario,
         estrelas_usuario,
-        msg_usuario
+        msg_usuario,
+        utilidade
     ])
 
 

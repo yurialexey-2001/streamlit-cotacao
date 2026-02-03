@@ -6,7 +6,7 @@ paginas = st.navigation({
         st.Page("pages/sobre_mim.py",title="Sobre mim")],
     "Conteúdo":[
         st.Page("pages/cotacao.py",title="Cotação de Moedas"),
-        st.Page("pages/futuros.py",title="Em desenvolvimento")],
+        st.Page("pages/planilha.py",title="Planilha de Finanças")],
     "Extras":[
         st.Page("pages/feedback.py",title="Página de Feedback")]
         })
